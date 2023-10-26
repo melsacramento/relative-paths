@@ -5,4 +5,4 @@ services:
   stdin_open: true
   image: alpine
   volumes:
-   - ./html/${PORTAINER_EDGE_ID}.html:/config
+   - ./html/${PORTAINER_EDGE_ID}.html:/config-edgeid
