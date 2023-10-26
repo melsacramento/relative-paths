@@ -4,5 +4,7 @@ services:
   image: alpine
   tty: true
   stdin_open: true
+  environment:
+   - hello=hi
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}.html:/config-edgegroup
