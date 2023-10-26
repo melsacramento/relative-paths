@@ -1,6 +1,8 @@
 version: '3'
 services:
  alpine-gitops:
+  tty: true
+  stdin_open: true
   image: alpine
   volumes:
    - ./html/${PORTAINER_EDGE_ID}.html:/config
