@@ -5,4 +5,4 @@ services:
   tty: true
   stdin_open: true
   volumes:
-   - ./html/${PORTAINER_EDGE_GROUP}:/config
+   - ./html/${PORTAINER_EDGE_GROUP}.html:/config
