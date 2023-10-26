@@ -2,5 +2,7 @@ version: '3' #To use this make sure that you have an edge group that has the nam
 services:
  alpine-gitops:
   image: alpine
+  tty: true
+  stdin_open: true
   volumes:
    - ./${PORTAINER_EDGE_GROUP}.html:/config
