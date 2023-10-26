@@ -3,4 +3,4 @@ services:
  alpine-gitops:
   image: alpine
   volumes:
-   - ./${PORTAINER_EDGE_ID}.html:/config
+   - ./html/${PORTAINER_EDGE_ID}.html:/config
