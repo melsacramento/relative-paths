@@ -8,4 +8,4 @@ services:
    - hello=hi
    - hoopla=asd
   volumes:
-   - ./html/${PORTAINER_EDGE_GROUP}.html:/config-edgegroup
+   - ./html/${PORTAINER_EDGE_GROUP}.html:/home/config-edgegroup.txt
