@@ -7,4 +7,4 @@ services:
   environment:
    - hello=hi
   volumes:
-   - ./html/${PORTAINER_EDGE_ID}.html:/home/config-edgeid
+   - ./html/${PORTAINER_EDGE_ID}:/home/config-edgeid
