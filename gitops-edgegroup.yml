@@ -6,7 +6,5 @@ services:
   stdin_open: true
   environment:
    - hello=hi
-   - redid=variables
-   - another=variableinplace
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}.html:/home/config-edgegroup.txt
