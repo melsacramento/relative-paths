@@ -6,6 +6,6 @@ services:
   image: alpine
   environment:
    - hello=hi
-   - trigger=containerchange
+   - make=change
   volumes:
    - ./html/${PORTAINER_EDGE_ID}.html:/home/config-edgeid
