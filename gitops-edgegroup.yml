@@ -6,5 +6,6 @@ services:
   stdin_open: true
   environment:
    - hello=hi
+   - core=values
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}.html:/home/config-edgegroup.txt
