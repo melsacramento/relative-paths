@@ -8,5 +8,6 @@ services:
    - hello=hi
    - hoopla=asd
    - chocolate=sweet
+   - heyo=wat
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
