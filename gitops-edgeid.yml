@@ -7,5 +7,6 @@ services:
   environment:
    - hello=hi
    - make=change
+   - i=make
   volumes:
    - ./html/${PORTAINER_EDGE_ID}.html:/home/config-edgeid.txt
