@@ -6,5 +6,6 @@ services:
   image: alpine
   environment:
    - hello=hi
+   - hoopla=asd
   volumes:
    - ./html/${PORTAINER_EDGE_ID}:/home/config-edgeid
