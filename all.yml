@@ -6,6 +6,7 @@ services:
   image: alpine
   environment:
    - pop=book
+   - hoopl=u
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}.html:/home/config-edgegroup.txt
    - ./html/${PORTAINER_EDGE_ID}.html:/home/config-edgeid.txt
