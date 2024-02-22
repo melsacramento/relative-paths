@@ -8,4 +8,4 @@ services:
    - hello=hi
    - make=change
   volumes:
-   - ./html/${PORTAINER_EDGE_ID}.html:/home/config-edgeid
+   - ./html/${PORTAINER_EDGE_ID}.html:/home/config-edgeid.txt
