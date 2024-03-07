@@ -7,6 +7,5 @@ services:
   environment:
    - hello=hi
    - core=values
-   - playstation=plus
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}.html:/home/config-edgegroup.txt
