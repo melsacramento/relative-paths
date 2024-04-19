@@ -6,4 +6,5 @@ services:
       - ../html:/home/html
   tty: true
   stdin_open: true
-
+  environment:
+   - ${env:-default}=novigrad
