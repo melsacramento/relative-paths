@@ -6,6 +6,5 @@ services:
   stdin_open: true
   environment:
    - hello=hi
-   - ${ENV:-default}=warren
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}.html:/home/config-edgegroup.txt
