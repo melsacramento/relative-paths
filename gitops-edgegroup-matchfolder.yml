@@ -7,5 +7,5 @@ services:
   environment:
    - ${ENV:-test}=full-life
    - test=asdas
-  volumes:
-   - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
+#  volumes:
+#   - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
