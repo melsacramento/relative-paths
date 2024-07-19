@@ -1,0 +1,12 @@
+version: '3'
+services:
+ alpine-gitops:
+  tty: true
+  stdin_open: true
+  image: alpine
+  environment:
+   - hello=hi
+   - make=change
+   - i=make
+  volumes:
+   - ./html/${PORTAINER_EDGE_ID}.html:/home/config-edgeid.txt
