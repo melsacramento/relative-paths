@@ -8,6 +8,5 @@ services:
    mode: global
   environment:
    - ${ENV:-test}=full-life
-   - test=this
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
