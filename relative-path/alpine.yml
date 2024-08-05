@@ -9,3 +9,4 @@ services:
   environment:
    - ${ENV:-default}=novigrad
    - ${ENV2:-default2}=raphael
+   - make=change
