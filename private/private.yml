@@ -1,7 +1,7 @@
 version: '3'
 services:
  large-app:
-  image: 6261998/priv:latest
+  image: 6261998/priv:alpine
   volumes:
       - ../html:/home/html
   tty: true
