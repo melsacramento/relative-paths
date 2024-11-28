@@ -8,10 +8,3 @@ services:
    - hello=hi
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}.html:/home/config-edgegroup.txt
-  networks:
-   - network-test
-#Delete this
-
-networks:
- network-test:
-  name: network-test

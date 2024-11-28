@@ -11,3 +11,10 @@ services:
    - major=uppdate
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
+#Delete this
+  networks:
+   - network-test
+
+networks:
+ network-test:
+  name: network-test
