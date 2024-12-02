@@ -8,4 +8,4 @@ services:
    - hello=hi
    - hoopla=asd
   volumes:
-   - ./html/${PORTAINER_EDGE_ID}:/home/config-edgeid
+   - ./html/${PORTAINER_EDGE_ID}/config.txt:/home/config-edgeid
