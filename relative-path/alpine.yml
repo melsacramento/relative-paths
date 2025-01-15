@@ -2,8 +2,8 @@ version: '3'
 services:
  large-app:
   image: nats:latest
-  # volumes:
-  #     - ../html:/home/html
+  volumes:
+      - ../html:/home/html
   tty: true
   stdin_open: true
   environment:
