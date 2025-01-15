@@ -1,7 +1,7 @@
 version: '3'
 services:
  large-app:
-  image: nats:latest
+  image: alpine:latest
   volumes:
       - ../html:/home/html
   tty: true
