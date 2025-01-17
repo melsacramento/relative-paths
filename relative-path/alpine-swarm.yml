@@ -6,6 +6,10 @@ services:
       - ../html:/home/html
   tty: true
   stdin_open: true
+ other-large-app:
+  image: nats
+  volumes:
+   - ../private:/home/private
 
 
    
