@@ -6,8 +6,8 @@ services:
       - ../html:/home/html
   tty: true
   stdin_open: true
-  environment:
-   - ${ENV:-default}=novigrad
-   - ${ENV2:-default2}=raphael
-   - somethig=test
+ other-large-app:
+  image: nats:latest
+  volumes:
+   - ../private:/home/private
    
