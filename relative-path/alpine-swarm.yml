@@ -8,5 +8,7 @@ services:
   stdin_open: true
  other-large-app:
   image: nats:latest
+  volumes:
+   - ../private:/home/private
 
    
