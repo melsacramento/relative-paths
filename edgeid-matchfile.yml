@@ -9,4 +9,4 @@ services:
    - make=change
    - i=make
   volumes:
-   - ./html/${PORTAINER_EDGE_ID}.html:/home/config-edgeid.txt
+   - ./html/${PORTAINER_EDGE_ID}.txt:/home/config-edgeid.txt
