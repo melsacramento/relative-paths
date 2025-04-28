@@ -7,5 +7,6 @@ services:
   environment:
    - hello=hi
    - cassd=xzc
+   - xzc=dfg
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}.html:/home/config-edgegroup.txt

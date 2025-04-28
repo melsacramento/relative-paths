@@ -9,6 +9,7 @@ services:
   environment:
    - ${ENV:-test}=full-life
    - major=uppdate
+   - asd=zxc
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
 
