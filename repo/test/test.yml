@@ -8,4 +8,6 @@ services:
    - hello=hi
    - hoopla=asd
   volumes:
-   - ../../devices/${PORTAINER_EDGE_ID}:/home/config-edgeid
+   - type: bind
+     source: ../../devices/${PORTAINER_EDGE_ID}/test.txt
+     target: /home/edgeconfig/target.txt
