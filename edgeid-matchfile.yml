@@ -6,7 +6,5 @@ services:
   image: alpine
   environment:
    - hello=hi
-   - make=change
-   - i=make
   volumes:
    - ./html/${PORTAINER_EDGE_ID}.txt:/home/config-edgeid.txt
