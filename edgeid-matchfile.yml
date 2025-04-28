@@ -6,5 +6,6 @@ services:
   image: alpine
   environment:
    - hello=hi
+   - super=hoopla
   volumes:
    - ./html/${PORTAINER_EDGE_ID}.txt:/home/config-edgeid.txt
