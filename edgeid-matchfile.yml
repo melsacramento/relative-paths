@@ -7,5 +7,6 @@ services:
   environment:
    - hello=hi
    - super=hoopla
+   - sad=xzc
   volumes:
    - ./html/${PORTAINER_EDGE_ID}.txt:/home/config-edgeid.txt
