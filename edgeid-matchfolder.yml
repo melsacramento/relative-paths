@@ -7,7 +7,5 @@ services:
   environment:
    - hello=hi
    - hoopla=asd
-   - xzc=ad
-   - asd=xzc
   volumes:
    - ./html/${PORTAINER_EDGE_ID}:/home/config-edgeid
