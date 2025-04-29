@@ -32,7 +32,7 @@ services:
   image: alpine
   # entrypoint: watch cat /file
   volumes:
-   - ./devices/${PORTAINER_EDGE_GROUP}.txt:/home/file.txt
+   - ./devices/${PORTAINER_EDGE_GROUP}:/home/hoopla
 
  test2:
   tty: true
@@ -40,7 +40,7 @@ services:
   image: alpine
   # entrypoint: watch cat /file
   volumes:
-   - ./devices/${PORTAINER_EDGE_GROUP}.txt:/home/file.txt
+   - ./devices/${PORTAINER_EDGE_GROUP}:/home/hoopla
   
  test3:
   tty: true
@@ -48,4 +48,4 @@ services:
   image: alpine
   # entrypoint: watch cat /file
   volumes:
-   - ./devices/${PORTAINER_EDGE_GROUP}.txt:/home/file.txt   
+   - ./devices/${PORTAINER_EDGE_GROUP}:/home/hoopla 
