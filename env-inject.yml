@@ -1,0 +1,43 @@
+version: '3'
+services:
+ alpine:
+  tty: true
+  stdin_open: true
+  image: alpine
+  entrypoint: mkdir /home/hoopla
+  volumes:
+   - ./devices/${PORTAINER_EDGE_GROUP}:/file
+
+ alpine2:
+  tty: true
+  stdin_open: true
+  image: alpine
+  entrypoint: mkdir /home/hornet
+  volumes:
+   - ./devices/${PORTAINER_EDGE_GROUP}:/file
+
+
+# services:
+#   # gr-dir:
+#   #   image: busybox
+#   #   entrypoint: cat /file
+#   #   volumes:
+#   #     - ./configs/${PORTAINER_EDGE_GROUP}/file:/file
+
+#   gr-file:
+#     image: busybox
+#     entrypoint: cat /file
+#     volumes:
+#       - ./configs/${PORTAINER_EDGE_GROUP}:/file
+
+#   # id-dir:
+#   #   image: busybox
+#   #   entrypoint: cat /file
+#   #   volumes:
+#   #     - ./configs/${PORTAINER_EDGE_ID}/file:/file
+
+#   id-file:
+#     image: busybox
+#     entrypoint: cat /file
+#     volumes:
+#       - ./configs/${PORTAINER_EDGE_ID}:/file
