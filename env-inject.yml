@@ -4,7 +4,7 @@ services:
   tty: true
   stdin_open: true
   image: alpine
-  entrypoint: cat /file
+  entrypoint: sh -c "cat /file && tail -f /dev/null"
   volumes:
    - ./devices/${PORTAINER_EDGE_GROUP}:/file
 
@@ -12,7 +12,7 @@ services:
   tty: true
   stdin_open: true
   image: alpine
-  entrypoint: cat /file
+  entrypoint: sh -c "cat /file && tail -f /dev/null"
   volumes:
    - ./devices/${PORTAINER_EDGE_GROUP}:/file
 
