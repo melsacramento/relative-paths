@@ -1,6 +1,6 @@
 version: '3'
 services:
- alpine:
+ test1:
   tty: true
   stdin_open: true
   image: alpine
@@ -8,13 +8,22 @@ services:
   volumes:
    - ./devices/${PORTAINER_EDGE_ID}:/file
 
- alpine2:
+ test2:
   tty: true
   stdin_open: true
   image: alpine
   entrypoint: cat /file
   volumes:
    - ./devices/${PORTAINER_EDGE_ID}:/file
+  
+  test3:
+   tty: true
+   stdin_open: true
+   image: alpine
+   entrypoint: cat /file
+   volumes:
+    - ./devices/${PORTAINER_EDGE_ID}:/file
+   
 
 
 # services:
