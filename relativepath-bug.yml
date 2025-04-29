@@ -7,6 +7,8 @@ services:
       - '80:80' # Public HTTP Port
       - '443:443' # Public HTTPS Port
       - '81:81' # Admin Web Port
+    environment:
+     - some=hoopla
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
