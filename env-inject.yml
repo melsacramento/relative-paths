@@ -16,13 +16,13 @@ services:
   volumes:
    - ./devices/${PORTAINER_EDGE_ID}:/file
   
-  test3:
-   tty: true
-   stdin_open: true
-   image: alpine
-   entrypoint: cat /file
-   volumes:
-    - ./devices/${PORTAINER_EDGE_ID}:/file
+ test3:
+  tty: true
+  stdin_open: true
+  image: alpine
+  entrypoint: cat /file
+  volumes:
+   - ./devices/${PORTAINER_EDGE_ID}:/file
    
 
 
