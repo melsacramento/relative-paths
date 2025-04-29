@@ -30,6 +30,8 @@ services:
   tty: true
   stdin_open: true
   image: alpine
+  environment:
+   - hello=gi
   # entrypoint: watch cat /file
   volumes:
    - ./devices/${PORTAINER_EDGE_GROUP}:/home/hoopla
