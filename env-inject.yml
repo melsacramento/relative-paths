@@ -4,7 +4,7 @@ services:
   tty: true
   stdin_open: true
   image: alpine
-  entrypoint: mkdir /home/hoopla
+  entrypoint: cat /file
   volumes:
    - ./devices/${PORTAINER_EDGE_GROUP}:/file
 
@@ -12,7 +12,7 @@ services:
   tty: true
   stdin_open: true
   image: alpine
-  entrypoint: mkdir /home/hornet
+  entrypoint: cat /file
   volumes:
    - ./devices/${PORTAINER_EDGE_GROUP}:/file
 
