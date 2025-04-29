@@ -4,26 +4,25 @@ services:
   tty: true
   stdin_open: true
   image: alpine
-  entrypoint: cat /file
+  entrypoint: watch cat /file
   volumes:
-   - ./devices/${PORTAINER_EDGE_ID}:/file
+   - ./devices/${PORTAINER_EDGE_ID}.txt:/home/file.txt
 
  test2:
   tty: true
   stdin_open: true
   image: alpine
-  entrypoint: cat /file
+  entrypoint: watch cat /file
   volumes:
-   - ./devices/${PORTAINER_EDGE_ID}:/file
+   - ./devices/${PORTAINER_EDGE_ID}.txt:/home/file.txt
   
  test3:
   tty: true
   stdin_open: true
   image: alpine
-  entrypoint: cat /file
+  entrypoint: watch cat /file
   volumes:
-   - ./devices/${PORTAINER_EDGE_ID}:/file
-   
+   - ./devices/${PORTAINER_EDGE_ID}.txt:/home/file.txt   
 
 
 # services:
