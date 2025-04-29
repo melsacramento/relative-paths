@@ -4,12 +4,11 @@ services:
   image: alpine
   tty: true
   stdin_open: true
-  deploy:
-   mode: global
   environment:
    - ${ENV:-test}=full-life
    - major=uppdate
    - asd=zxc
+
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
 
