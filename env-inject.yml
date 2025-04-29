@@ -6,7 +6,7 @@ services:
   image: alpine
   # entrypoint: watch cat /file
   volumes:
-   - ./devices/${PORTAINER_EDGE_ID}.txt:/home/file
+   - ./devices/${PORTAINER_EDGE_ID}:/home/file
 
  test2:
   tty: true
@@ -14,7 +14,7 @@ services:
   image: alpine
   # entrypoint: watch cat /file
   volumes:
-   - ./devices/${PORTAINER_EDGE_ID}.txt:/home/file
+   - ./devices/${PORTAINER_EDGE_ID}:/home/file
   
  test3:
   tty: true
@@ -22,7 +22,7 @@ services:
   image: alpine
   # entrypoint: watch cat /file
   volumes:
-   - ./devices/${PORTAINER_EDGE_ID}.txt:/home/file   
+   - ./devices/${PORTAINER_EDGE_ID}:/home/file   
 
 
 # services:
