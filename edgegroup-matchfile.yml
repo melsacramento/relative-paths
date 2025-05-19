@@ -8,6 +8,7 @@ services:
    - hello=hi
    - cassd=xzc
    - xzc=dfg
+   - as=xzc
    
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}.html:/home/config-edgegroup.txt
