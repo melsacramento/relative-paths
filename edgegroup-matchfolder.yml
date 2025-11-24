@@ -2,7 +2,7 @@ version: '3.4' #To use this make sure that you have an edge group that has the n
 services:
  alpine-gitops:
  #Remember to always use alpine
-  image: alpine
+  image: 6261998/alpine:latest
   tty: true
   stdin_open: true
   environment:

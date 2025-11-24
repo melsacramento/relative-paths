@@ -4,7 +4,7 @@ services:
   tty: true
   stdin_open: true
   #Remember to always use alpine
-  image: alpine
+  image: 6261998/alpine:latest
   environment:
    - hello=hi
    - super=hoopla
