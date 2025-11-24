@@ -3,6 +3,7 @@ services:
  alpine-gitops:
   tty: true
   stdin_open: true
+  #Remember to always use alpine
   image: alpine
   environment:
    - hello=hi
