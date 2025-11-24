@@ -9,6 +9,7 @@ services:
    - ${ENV:-test}=full-life
    - asd=zxcas
    - cv=dfg
+   - asd=xzc
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
 
