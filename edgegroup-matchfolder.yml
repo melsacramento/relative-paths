@@ -7,6 +7,7 @@ services:
   stdin_open: true
   environment:
    - ${ENV:-test}=full-life
+   - asd=zxcas
   volumes:
    - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
 
