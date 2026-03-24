@@ -1,0 +1,25 @@
+version: '3.4' #To use this make sure that you have an edge group that has the name gitops
+services:
+ alpine-gitops:
+ #Remember to always use alpine
+  image: 6261998/alpine:latest
+  tty: true
+  stdin_open: true
+  environment:
+   - ${ENV:-test}=full-life
+   - asd=zxcas
+  volumes:
+   - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
+  alpine-gitops2:
+   image: 6261998/alpine:latest
+   tty: true
+   stdin_open: true
+  alpine-gitops3:
+   image: 6261998/alpine:latest
+   tty: true
+   stdin_open: true
+  alpine-gitops4:
+   image: 6261998/alpine:latest
+   tty: true
+   stdin_open: true
+
