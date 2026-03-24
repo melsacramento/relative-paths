@@ -9,13 +9,13 @@ services:
    - ${ENV:-test}=full-life
    - asd=zxcas
   volumes:
-   - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
+   - ./html/${PORTAINER_EDGE_GROUP}.html:/home/config-edgegroup.txt
  alpine-gitops2:
    image: 6261998/alpine:latest
    tty: true
    stdin_open: true
    volumes:
-   - ./html/${PORTAINER_EDGE_ID}:/home/config-edgeid
+   - ./html/${PORTAINER_EDGE_ID}.html:/home/config-edgeid.txt
  alpine-gitops3:
    image: 6261998/alpine:latest
    tty: true
