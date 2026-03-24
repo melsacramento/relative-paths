@@ -15,7 +15,7 @@ services:
    tty: true
    stdin_open: true
    volumes:
-   - ./html/${PORTAINER_EDGE_GROUP}:/home/config-edgegroup
+   - ./html/${PORTAINER_EDGE_ID}:/home/config-edgeid
  alpine-gitops3:
    image: 6261998/alpine:latest
    tty: true
