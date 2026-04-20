@@ -9,6 +9,4 @@ services:
   environment:
    - ${ENV:-default}=novigrad
    - ${ENV2:-default2}=raphael
-   - somethig=test
-   - lemon=juice
    
